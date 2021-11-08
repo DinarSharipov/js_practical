@@ -1,0 +1,58 @@
+Arguments: 
+  /usr/local/bin/node /usr/local/bin/yarn add —save-dev webpack webpack-cli
+
+PATH: 
+  /Library/Frameworks/Python.framework/Versions/3.9/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Frameworks/Python.framework/Versions/3.9/bin
+
+Yarn version: 
+  1.22.15
+
+Node version: 
+  14.18.0
+
+Platform: 
+  darwin x64
+
+Trace: 
+  TypeError [ERR_UNESCAPED_CHARACTERS]: Request path contains unescaped characters
+      at new NodeError (internal/errors.js:322:7)
+      at new ClientRequest (_http_client.js:155:13)
+      at Object.request (https.js:370:10)
+      at Request.module.exports.Request.start (/usr/local/lib/node_modules/yarn/lib/cli.js:141447:32)
+      at Request.module.exports.Request.end (/usr/local/lib/node_modules/yarn/lib/cli.js:142206:10)
+      at end (/usr/local/lib/node_modules/yarn/lib/cli.js:141260:14)
+      at Immediate._onImmediate (/usr/local/lib/node_modules/yarn/lib/cli.js:141274:7)
+      at processImmediate (internal/timers.js:464:21)
+
+npm manifest: 
+  {
+    "name": "js_practical",
+    "version": "1.0.0",
+    "description": "Excel",
+    "main": "webpack.config.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/DinarSharipov/js_practical.git"
+    },
+    "keywords": [
+      "js",
+      "javascript",
+      "excel"
+    ],
+    "author": "Dinar Sharipov <pravovoy116@gmail.com>",
+    "license": "ISC",
+    "bugs": {
+      "url": "https://github.com/DinarSharipov/js_practical/issues"
+    },
+    "homepage": "https://github.com/DinarSharipov/js_practical#readme",
+    "private": true
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
