@@ -42,13 +42,13 @@ module.exports = {
     extensions: ['.js'], // пока не понял для чего это, но видимо чтобы указывать распознавание расширения
     alias: {
       // для того чтобы не прописывать ../../../ а просто писать к примеру: "@/images/path.jpeg"
-      '~': path.resolve(__dirname, 'src'),
-      '~core': path.resolve(__dirname, 'src/core'),
+      '@': path.resolve(__dirname, 'src'),
+      '@core': path.resolve(__dirname, 'src/core'),
     },
   },
   devtool: isDev ? 'source-map' : false,
   devServer: {
-    port: 65535,
+    port: 3000,
     hot: isDev,
   },
   plugins: [
@@ -86,7 +86,7 @@ module.exports = {
         use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader'], // обработчики которые перелапачивают код так, чтобы его понимал webpack ВАЖНО! читает справа налево. SASS-LOADER и CSS-LOADER преобразуют в CSS а минисиэсэс соберет в файл
       },
       {
-        test: /\.m?js$/,
+        test: /\.js$/,
         exclude: /node_modules/,
         use: jsLoaders(),
       },
