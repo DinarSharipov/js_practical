@@ -6,7 +6,9 @@
         "node": true
     },
     "rules": {
-        "require-jsdoc": "off"
+        "no-debugger": "off",
+        "require-jsdoc": "off",
+        "max-len": "off"
     },
     "extends": ["eslint:recommended", "google"]
 }
