@@ -11,12 +11,17 @@ function createCell(colsCount) {
 }
 
 function toColumn(char) {
-  return `<div class="column">${char}</div> `;
+  return `<div class="column">${char}
+  <div class="col-resize"  data-resize="col"></div>
+  </div> `;
 }
 
 function createRow(num, content) {
+  const resizer = num ? `<div class="row-resize" data-resize="row"></div>` : '';
   return `<div class="row">
-  <div class="row-info">${num ? num : ''}</div>
+  <div class="row-info">${num ? num : ''}
+  ${resizer}
+  </div>
   <div class="row-data">${content}</div>
   </div>`;
 }
